@@ -1,0 +1,154 @@
+.root {
+    background-color: #0e1014;
+}
+
+.homeContainer {
+    position: relative;
+    width: 90%;
+    height: 980px;
+    margin: 0 auto;
+    padding-top: 46px;
+}
+
+.redBall {
+    position: absolute;
+    width: 83px;
+    height: 83px;
+    left: 428px;
+    top: 65px;
+    background: radial-gradient(
+            64% 64% at 27.25% 26.5%,
+            rgba(255, 208, 208, 0.536) 0%,
+            rgba(212, 93, 93, 0.264) 59.67%,
+            rgba(167, 49, 49, 0.248) 78.59%,
+            rgba(130, 25, 25, 0.248) 100%
+        )
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    backdrop-filter: blur(2px);
+    border-radius: 50%;
+}
+
+.purpleBall {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 759px;
+    top: -2px;
+    background: radial-gradient(
+            64% 64% at 27.25% 26.5%,
+            rgba(236, 208, 255, 0.64) 0%,
+            rgba(161, 93, 207, 0.24) 59.67%,
+            rgba(118, 49, 164, 0.208) 78.59%,
+            rgba(86, 24, 128, 0.232) 100%
+        )
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+    filter: blur(5px);
+    backdrop-filter: blur(2px);
+    border-radius: 50%;
+}
+
+.redBallSm {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 551px;
+    top: 547px;
+    background: radial-gradient(
+            64% 64% at 27.25% 26.5%,
+            rgba(255, 208, 208, 0.48) 0%,
+            rgba(212, 93, 93, 0.248) 59.67%,
+            rgba(167, 49, 49, 0.264) 78.59%,
+            rgba(130, 25, 25, 0.232) 100%
+        )
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    filter: blur(2.5px);
+    backdrop-filter: blur(2px);
+    border-radius: 50%;
+}
+
+.redLight {
+    position: absolute;
+    width: 311px;
+    height: 311px;
+    left: -102px;
+    top: 251px;
+    background: #961a1a;
+    opacity: 0.5;
+    filter: blur(196px);
+    border-radius: 50%;
+}
+
+.purpleLight {
+    position: absolute;
+    width: 259px;
+    height: 259px;
+    left: 602px;
+    top: -154px;
+    background: #833ab4;
+    opacity: 0.5;
+    filter: blur(196px);
+    border-radius: 50%;
+}
+
+@media (min-width: 1290px) {
+    .container {
+        width: 1140px;
+    }
+
+    .redBall {
+        left: 519px;
+    }
+
+    .redBallSm {
+        left: 851px;
+    }
+
+    .purpleBall {
+        left: 868px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    .root {
+        /* margin-bottom: 60px; */
+        overflow: hidden;
+    }
+    .homeContainer {
+        width: 100%;
+        height: 100%;
+        padding-top: 0px;
+        padding: 0px 0px;
+    }
+    .redBall {
+        width: 43px;
+        height: 43px;
+        left: 29px;
+        top: 472px;
+    }
+    .redBallSm {
+        width: 18px;
+        height: 18px;
+        left: 278px;
+        top: 563px;
+    }
+    .purpleBall {
+        width: 40px;
+        height: 40px;
+        left: 300px;
+        top: 236px;
+    }
+    .purpleLight {
+        display: none;
+        left: 258px;
+        top: 107px;
+    }
+    .redLight {
+        width: 211px;
+        height: 210px;
+        left: -55px;
+        top: 241px;
+    }
+}

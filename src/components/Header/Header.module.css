@@ -1,0 +1,100 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #e4e5ea;
+    margin: 0 auto;
+}
+
+.logoContainer p {
+    font-family: 'Montserrat', serif;
+    font-size: 10px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', serif;
+    gap: 20px;
+}
+
+.menu ul li {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+}
+.contacts span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.headerMobile {
+    display: none;
+}
+
+@media (min-width: 1290px) {
+    .headerContainer {
+        width: 1140px;
+    }
+
+    .menu {
+        margin-right: 137px;
+    }
+
+    .menu ul {
+        gap: 30px;
+    }
+
+    .contacts {
+        gap: 27px;
+    }
+
+    .socials {
+        gap: 30px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    .headerContainer {
+        display: none;
+    }
+    .headerMobile {
+        display: block;
+        padding: 20px 15px;
+        background: #0e1014;
+        color: #e4e5ea;
+    }
+
+    .headerMobile ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 16px;
+    }
+
+    .headerMobile ul li {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,138 @@
+.footerContainer {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    color: #e4e5ea;
+    gap: 33px;
+    padding-top: 55px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top h4 {
+    text-transform: uppercase;
+    color: #656566;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.top h4:last-child {
+    text-align: right;
+}
+
+.top ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.top ul.li,
+.contactsContainer p {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.menuContainer {
+    display: flex;
+    gap: 52px;
+}
+
+.menuContainer ul li {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footerContacts {
+    text-align: right;
+}
+
+.socials {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.bottom {
+    align-self: self-end;
+}
+
+.bottom p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    font-family: 'Montserrat', serif;
+}
+
+.bottom p:last-child {
+    margin-top: 5px;
+    text-decoration-line: underline;
+}
+
+.clients {
+    display: none;
+}
+.clientsMob {
+    display: block;
+}
+
+@media (min-width: 1290px) {
+    .footerContainer {
+        width: 1140px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    .footerContainer {
+        padding: 45px 15px 60px;
+        gap: 50px;
+        background-color: #0e1014;
+        z-index: 1000;
+    }
+    .top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerContacts {
+        text-align: left;
+    }
+    .about,
+    .menu {
+        margin-bottom: 30px;
+    }
+
+    .menuContainer {
+        gap: 48px;
+    }
+
+    .menuContainer ul li {
+        font-size: 14px;
+    }
+
+    .socials {
+        justify-content: flex-start;
+    }
+
+    .bottom {
+        align-self: self-start;
+    }
+
+    .bottom p {
+        text-align: left;
+    }
+
+    .clients {
+        display: block;
+    }
+    .clientsMob {
+        display: none;
+    }
+}
